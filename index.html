@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Tyagi - Software Engineer | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Harsh Tyagi - Software Engineer specializing in Railway Systems, Full Stack Development">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#home" class="brand-link">
+                        <i class="fas fa-code"></i>
+                        Harsh Tyagi
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-layout">
+                <!-- Profile Photo -->
+                <div class="hero-profile">
+                    <div class="profile-photo-container">
+                        <img src="1000020638.jpg" alt="Harsh Tyagi - Software Engineer Profile Photo" class="profile-photo">
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+                
+                <!-- Hero Text Content -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Harsh Tyagi</span>
+                    </h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-text">I'm a </span>
+                        <span class="typewriter" id="typewriter"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate software engineer specializing in railway systems and full-stack development. 
+                        I create innovative solutions that streamline operations and enhance user experiences.
+                    </p>
+                    
+                    <div class="hero-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>8010803534</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>harshtyagi8010@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span>Ghaziabad, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#" class="btn btn--outline" id="downloadResume">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/harsh-tyagi" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/harsh-tyagi" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in software engineering</p>
+            </div>
+            
+            <div class="experience-content">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Graduate Engineer Trainee</h3>
+                            <h4>PPS International Pvt Ltd</h4>
+                        </div>
+                        <div class="experience-meta">
+                            <span class="duration">07/2024 – present</span>
+                            <span class="location">Greater Noida, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-train"></i>
+                            <span>Built a tool to manage over 100 train journeys daily, streamlining the planning process</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Cut journey scheduling time by 30%, improving overall operations for railway operators</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Connected the system with 3 existing railway operations for seamless data exchange</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Reduced manual errors by 25%, increasing the accuracy of journey planning and timetable updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions I've built</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="project-title">Railway Journey Creation Tool</h3>
+                    <p class="project-description">Journey Planning and Creation System for Railways</p>
+                    
+                    <div class="project-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-number">150+</span>
+                            <span class="achievement-text">Daily train journeys automated</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">40%</span>
+                            <span class="achievement-text">Scheduling efficiency improvement</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">30%</span>
+                            <span class="achievement-text">Planning time reduction</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">5</span>
+                            <span class="achievement-text">Railway systems integrated</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">20%</span>
+                            <span class="achievement-text">Accuracy improvement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="project-title">EOTT (Web App)</h3>
+                    <p class="project-description">Real-time Train Monitoring and Management System</p>
+                    
+                    <div class="project-achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-number">200+</span>
+                            <span class="achievement-text">Trains monitored in real-time</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">50+</span>
+                            <span class="achievement-text">Users served with dynamic dashboard</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">15%</span>
+                            <span class="achievement-text">Downtime reduction achieved</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">100+</span>
+                            <span class="achievement-text">Devices tracked with live location</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My expertise across different technologies</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3 class="skill-name">Frontend</h3>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <p class="skill-description">React.js, HTML, CSS, JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3 class="skill-name">Languages</h3>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <p class="skill-description">Python, Flutter, JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3 class="skill-name">Tools</h3>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <p class="skill-description">VS Code, Git, GitHub, Postman, MySQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3 class="skill-name">Systems</h3>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <p class="skill-description">Linux, Windows, AWS</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percentage="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-subtitle">My academic background and achievements</p>
+            </div>
+            
+            <div class="education-content">
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="education-degree">B Tech, CSE</h3>
+                        <h4 class="education-institution">RD Engineering College</h4>
+                        <p class="education-university">Dr A P J Abdul Kalam Technical University</p>
+                        <div class="education-meta">
+                            <span class="education-cgpa">6.9 CGPA</span>
+                            <span class="education-duration">2020 – 2024</span>
+                            <span class="education-location">Ghaziabad, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h3 class="education-degree">Intermediate, PCM</h3>
+                        <h4 class="education-institution">Central board of Secondary Education</h4>
+                        <div class="education-meta">
+                            <span class="education-cgpa">67%</span>
+                            <span class="education-duration">2018 – 2020</span>
+                            <span class="education-location">Ghaziabad, India</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications">
+                    <h3 class="certifications-title">Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-item">
+                            <i class="fab fa-aws"></i>
+                            <div class="certification-info">
+                                <h4>AWS Academy Cloud Architecture</h4>
+                                <p>AWS Academy</p>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fab fa-python"></i>
+                            <div class="certification-info">
+                                <h4>Introduction to PYTHON</h4>
+                                <p>Coding Ninja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project or opportunity</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+918010803534">+91 8010803534</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:harshtyagi8010@gmail.com">harshtyagi8010@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Ghaziabad, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/harsh-tyagi" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/harsh-tyagi" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Harsh Tyagi. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/harsh-tyagi" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/harsh-tyagi" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
