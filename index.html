@@ -99,17 +99,17 @@
                             <i class="fas fa-paper-plane"></i>
                             Get In Touch
                         </a>
-                        <a href="#" class="btn btn--outline" id="downloadResume">
+                        <a href="Harsh-Tyagi.pdf" class="btn btn--outline" id="downloadResume" download="Harsh-Tyagi.pdf">
                             <i class="fas fa-download"></i>
                             Download Resume
                         </a>
                     </div>
                     
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/harsh-tyagi" target="_blank" class="social-link">
+                        <a href="https://linkedin.com/in/harsh80" target="_blank" class="social-link">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/harsh-tyagi" target="_blank" class="social-link">
+                        <a href="https://github.com/harshtyagi8010" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -390,10 +390,10 @@
                     </div>
                     
                     <div class="contact-social">
-                        <a href="https://linkedin.com/in/harsh-tyagi" target="_blank" class="social-link">
+                        <a href="https://linkedin.com/in/harsh80" target="_blank" class="social-link">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/harsh-tyagi" target="_blank" class="social-link">
+                        <a href="https://github.com/harshtyagi8010" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -439,10 +439,10 @@
                     <p>&copy; 2025 Harsh Tyagi. All rights reserved.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://linkedin.com/in/harsh-tyagi" target="_blank" class="social-link">
+                    <a href="https://linkedin.com/in/harsh80" target="_blank" class="social-link">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/harsh-tyagi" target="_blank" class="social-link">
+                    <a href="https://github.com/harshtyagi8010" target="_blank" class="social-link">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -456,5 +456,17 @@
     </button>
 
     <script src="app.js"></script>
+    <script>
+document.getElementById('downloadResume').addEventListener('click', function(e) {
+    e.preventDefault();
+    const link = document.createElement('a');
+    link.href = 'Harsh-Tyagi.pdf';
+    link.download = 'Harsh-Tyagi.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+</script>
+<!-- ...existing code... -->
 </body>
 </html>
