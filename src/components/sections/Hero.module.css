@@ -1,0 +1,210 @@
+.section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+/* Ambient BG */
+.ambient {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(167, 139, 250, 0.08) 0%, transparent 70%);
+  bottom: 0;
+  right: 10%;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+}
+
+/* Layout */
+.inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.greeting {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+  animation: fadeUp 0.6s var(--ease-out-expo) 0.1s both;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  animation: fadeUp 0.6s var(--ease-out-expo) 0.2s both;
+}
+
+.roleWrapper {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: var(--color-accent);
+  min-height: 2rem;
+  animation: fadeUp 0.6s var(--ease-out-expo) 0.3s both;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  color: var(--color-primary);
+  font-weight: 300;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.tagline {
+  font-size: 0.975rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  max-width: 480px;
+  animation: fadeUp 0.6s var(--ease-out-expo) 0.4s both;
+}
+
+.cta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s var(--ease-out-expo) 0.5s both;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeUp 0.6s var(--ease-out-expo) 0.6s both;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: var(--color-border);
+}
+
+.emailLink {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast);
+}
+
+.emailLink:hover {
+  color: var(--color-primary);
+}
+
+/* Code card */
+.aside {
+  animation: fadeUp 0.8s var(--ease-out-expo) 0.3s both;
+}
+
+.codeCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.fileName {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+.code {
+  padding: 1.75rem;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.82rem;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+
+  .aside {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+}

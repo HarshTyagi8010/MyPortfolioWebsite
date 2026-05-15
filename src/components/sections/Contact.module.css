@@ -1,0 +1,53 @@
+.section {
+  background: var(--color-bg-2);
+}
+
+.card {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.blurb {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+.cta {
+  margin-top: 0.5rem;
+}
+
+.contactMeta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast);
+}
+
+.metaItem:hover {
+  color: var(--color-primary);
+}
+
+.metaItem svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.socialRow {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,7 @@
+.section {
+  background: var(--color-bg-2);
+}
+
+.timeline {
+  max-width: 800px;
+}
