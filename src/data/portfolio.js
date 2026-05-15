@@ -14,7 +14,7 @@
 
 export const meta = {
   name: "Harsh Tyagi",
-  title: "Software Developer | React.js | Next.js",
+  title: "Software Developer | React.js | Next.js | Angular",
   tagline: "Building scalable React.js & Next.js applications for high-traffic platforms.",
   description:
     "Software Developer with 1.5+ years of experience building scalable React.js and Next.js applications for high-traffic platforms including for our client IRCTC. Proficient in REST API integration, component-driven UI architecture, and performance optimization.",
